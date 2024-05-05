@@ -56,13 +56,7 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* добавил правило для <ol> по аналогии */
+ul, 
 ol {
   list-style: none;
   padding: 0;
@@ -118,7 +112,4 @@ iframe {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* 
-.section:first-child {
-  padding-top: 146px;
-} */
+
