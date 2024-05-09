@@ -1,8 +1,8 @@
-@import url(normalize.css);
+@import url(../styles/normalize.css);
+@import url(../styles/0main.css);
+@import url(../styles/1intro.css);
+@import url(../styles/2navigation.css);
 @import url();
-@import url();
-@import url();
-
 
 html {
   position: relative;
@@ -20,15 +20,17 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  font-size: 16px;
   color: #FFFFFF;
-  background-color: #1f1e1f;
+  background-color: #1f1e1f; */
 }
 
 
@@ -113,3 +115,6 @@ iframe {
   padding-bottom: 50px;
 }
 
+/* .main {
+  padding-top: 50px;
+} */

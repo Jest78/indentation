@@ -1,0 +1,14 @@
+.intro {
+  padding-top: 60px;
+}
+
+.intro-title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.intro__text:not(:last-child) {
+  margin-bottom: 30px;
+}
