@@ -1,0 +1,16 @@
+.from-previous__title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.from-previous__img--mrgn30 {
+    margin-right: 30px;
+}
+
+.from-previous__text {
+    display: inline-block;
+    max-width: 490px;
+    width: 100%;
+}

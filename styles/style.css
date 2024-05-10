@@ -2,7 +2,7 @@
 @import url(../styles/0main.css);
 @import url(../styles/1intro.css);
 @import url(../styles/2navigation.css);
-@import url();
+@import url(../styles/3from-previous.css);
 
 html {
   position: relative;
