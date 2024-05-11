@@ -5,12 +5,35 @@
     margin-bottom: 30px;
 }
 
-.from-previous__img--mrgn30 {
+.from-previous__grouptext {
+    display: inline-block;
+}
+
+.from-previous__grouptext--floatright {
+    max-width: 490px;
+    float: right;
+}
+
+.from-previous__grouptext--floatleft {
+    max-width: 480px;
+    float: left;
+    margin-right: 40px;
+}
+
+.from-previous__img {
+    max-width: 560px;
+    width: 100%;
+    display: inline;
+}
+
+.from-previous__img--withmargins {
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .from-previous__text {
-    display: inline-block;
+    display: block;
     max-width: 490px;
     width: 100%;
+    margin-bottom: 30px;
 }

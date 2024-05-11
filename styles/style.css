@@ -1,8 +1,9 @@
 @import url(../styles/normalize.css);
-@import url(../styles/0main.css);
 @import url(../styles/1intro.css);
 @import url(../styles/2navigation.css);
 @import url(../styles/3from-previous.css);
+@import url(../styles/4last-dom.css);
+
 
 html {
   position: relative;
@@ -105,7 +106,7 @@ iframe {
 */
 
 .container {
-  max-width: 1080px;
+  max-width: 1140px;
   padding: 0px 30px;
   margin: 0px auto;
 }

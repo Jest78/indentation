@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>indentation</title>
-  <!-- <link rel="icon" type="/image/svg+xml" href="assets/images/logo.svg">/ -->
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -56,44 +55,42 @@
           Отступ задается от предыдущего элемента к следующему: 
           от первого ко второму, сверху вниз, слева направо.
         </h3>
-        <figure class="from-previous__figure">
-          <img src="img/image 1.jpg" alt="" class="from-previous__img--mrgn30">
-          <figcaption></figcaption>
-        </figure>
+          <img src="img/image 1.jpg" alt="" class="from-previous__img from-previous__img--withmargins">
+          <div class="from-previous__grouptext from-previous__grouptext--floatright">
+            <p class="from-previous__text">
+              ВАЖНО: margin всегда задают от предыдущего элемента к следующему.
+            </p>
+            <p class="from-previous__text">
+              Свойство margin необходимо только для того, 
+              чтобы отодвинуть своего соседа справа или снизу, 
+              поэтому используется margin-right и margin-bottom.
+            </p>
+            <p class="from-previous__text">
+              (!) Свойства margin-left и margin-top используются крайне редко.
+            </p>
+            <p class="from-previous__text">
+              Для padding верно обратное. 
+              Исключением является его применения в декоративных целях, 
+              например, для увеличения области ссылки.
+            </p>
+          </div>
+          
         
-        <p class="from-previous__text">
-          ВАЖНО: margin всегда задают от предыдущего элемента к следующему.
-        </p>
-        <p class="from-previous__text">
-          Свойство margin необходимо только для того, 
-          чтобы отодвинуть своего соседа справа или снизу, 
-          поэтому используется margin-right и margin-bottom.
-        </p>
-        <p class="from-previous__text">
-          (!) Свойства margin-left и margin-top используются крайне редко.
-        </p>
-        <p class="from-previous__text">
-          Для padding верно обратное. 
-          Исключением является его применения в декоративных целях, 
-          например, для увеличения области ссылки.
-        </p>
-  
-        <p class="from-previous__text">
-          Отступ внутри блока сверху или слева реализуется 
-          через padding-top и padding-left родителя.
-        </p>
-        <p class="from-previous__text">
-          Отступы, как правило, делают в направлении от предыдущего элемента к следующему. 
-          Так элемент не будет толкать сам себя.
-        </p>
-        <p class="from-previous__text">
-          Изначально элемент статичен, а его положение может меняться 
-          только под воздействием свойств других блоков или свойств родителя.
-        </p>
-        <figure class="from-previous__figure">
-          <img src="img/image 2.jpg" alt="" class="from-previous__img--2">
-          <figcaption></figcaption>
-        </figure>
+        <div class="from-previous__grouptext from-previous__grouptext--floatleft">
+          <p class="from-previous__text">
+            Отступ внутри блока сверху или слева реализуется 
+            через padding-top и padding-left родителя.
+          </p>
+          <p class="from-previous__text">
+            Отступы, как правило, делают в направлении от предыдущего элемента к следующему. 
+            Так элемент не будет толкать сам себя.
+          </p>
+          <p class="from-previous__text">
+            Изначально элемент статичен, а его положение может меняться 
+            только под воздействием свойств других блоков или свойств родителя.
+          </p>
+        </div>
+        <img src="img/image 2.jpg" alt="" class="from-previous__img">
       </div>
     </section>
 
@@ -116,7 +113,9 @@
           <figcaption></figcaption>
         </figure>
   
-        <p class="last-dom-element__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+        <p class="last-dom-element__text">
+          Отступ делают за счёт соседних элементов, а не дочерних:
+        </p>
         <figure class="last-dom-element__figure">
           <img src="img/image 5.jpg" alt="" class="last-dom-element__img">
           <figcaption></figcaption>
