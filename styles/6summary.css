@@ -1,0 +1,9 @@
+/* не реагирует */
+.summary {
+  padding-top: 500px;
+  margin-top: 500px;
+}
+
+.summary__title {
+  font-size: 36px;
+}

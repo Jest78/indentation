@@ -9,12 +9,11 @@
 
 <body>
   <article class="main">
+    <h1 class="main__title container">
+      Отступы в вёрстке: margin и padding
+    </h1>
     <section class="intro">
       <div class="container">
-        <h1 class="intro-title">
-          Отступы в вёрстке: margin и padding
-        </h1>
-
         <p class="intro__text">
           В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла 
           хорошей читаемости вашего кода. 
@@ -55,7 +54,7 @@
           Отступ задается от предыдущего элемента к следующему: 
           от первого ко второму, сверху вниз, слева направо.
         </h3>
-          <img src="img/image 1.jpg" alt="" class="from-previous__img from-previous__img--withmargins">
+          <img src="img/image1.jpg" alt="блоки с текстом" class="from-previous__img from-previous__img--withmargins">
           <div class="from-previous__grouptext from-previous__grouptext--floatright">
             <p class="from-previous__text">
               ВАЖНО: margin всегда задают от предыдущего элемента к следующему.
@@ -90,7 +89,7 @@
             только под воздействием свойств других блоков или свойств родителя.
           </p>
         </div>
-        <img src="img/image 2.jpg" alt="" class="from-previous__img">
+        <img src="img/image2.jpg" alt="Важный заголовок" class="from-previous__img">
       </div>
     </section>
 
@@ -104,36 +103,42 @@
           Для примера, посмотрите на этот список:
         </p>
         <figure class="last-dom-element__figure">
-          <img src="img/image 3.jpg" alt="" class="last-dom-element__img ">
+          <img src="img/image3.jpg" alt="DOM дерево" class="last-dom-element__img ">
           <figcaption></figcaption>
         </figure>
 
-        <figure class="last-dom-element__figure last-dom-element__figure--relative">
-          <img src="img/image 4.jpg" alt="" class="last-dom-element__img last-dom-element__img--width600">
+        <figure class="last-dom-element__figure last-dom-element__figure--relativeh450">
+          <img src="img/image4.jpg" alt="полезные рецепты" class="last-dom-element__img last-dom-element__img--width600">
           <figcaption></figcaption>
         </figure>
   
         <p class="last-dom-element__text">
           Отступ делают за счёт соседних элементов, а не дочерних:
         </p>
-        <figure class="last-dom-element__figure">
-          <img src="img/image 5.jpg" alt="" class="last-dom-element__img">
-          <figcaption></figcaption>
+        <figure class="last-dom-element__figure last-dom-element__figure--border">
+          <img src="img/image5.jpg" alt="полезные рецепты код" class="last-dom-element__img">
+          <figcaption class="last-dom-element__caption  last-dom-element__caption--border container1020">
+            <span class="last-dom-element__boldfont">ВАЖНО</span>
+            : здесь 
+            <span class="last-dom-element__italicfont">.list-item</span>
+            — последний возможный элемент 
+            в котором мы задаём отступ, 
+            чтобы разделить списки.
+          </figcaption>
         </figure>
+      
         <p class="last-dom-element__text">
-          ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, 
-          чтобы разделить списки.
-        </p>
-        <p class="last-dom-element__text">
-          Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; 
-            для достижения той же цели. Внешне останется все точно также, 
-            но так делать не рекомендуется.
+          Казалось бы, можно задать отступ параграфу
+          &lt;<span class="last-dom-element__italicfont">p</span>&gt;,
+          либо обёртке &lt;<span class="last-dom-element__italicfont">article</span>&gt; 
+          для достижения той же цели. Внешне останется все точно также, 
+          но так делать не рекомендуется.
         </p>
         <p class="last-dom-element__text">
           Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
         </p>
-        <figure>
-          <img src="img/image 6.jpg" alt="" class="last-dom-element__img">
+        <figure class="last-dom-element__figure last-dom-element__figure--relativeh164">
+          <img src="img/image6.jpg" alt="вложенность код" class="last-dom-element__img  last-dom-element__img--width964">
           <figcaption></figcaption>
         </figure>
         <p class="last-dom-element__text">
@@ -141,8 +146,8 @@
           Именно для него задается padding-top, а не div с классом container. 
           Свойства margin, которые стоят по умолчанию необходимо обнулить.
         </p>
-        <figure class="last-dom-element__figure">
-          <img src="img/image 7.jpg" alt="" class="last-dom-element__img">
+        <figure class="last-dom-element__figure last-dom-element__figure--relativeh504">
+          <img src="img/image7.jpg" alt="Обнулить margin" class="last-dom-element__img last-dom-element__img--width1022">
           <figcaption></figcaption>
         </figure>
         <p class="last-dom-element__text">
@@ -166,7 +171,7 @@
           что и до следующего блока расстояние такое же.
         </p>
         <figure class="zero-indentation__figure">
-          <img src="img/image 8.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image8.jpg" alt="полезные рецепты margin-bottom" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
         
@@ -177,12 +182,12 @@
           если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.
         </p>
         <figure class="zero-indentation__figure">
-          <img src="img/image 9.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image9.jpg" alt="полезные рецепты инспектор отступов" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
         
         <figure class="zero-indentation__figure">
-          <img src="img/image 10.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image10.jpg" alt="код HTML" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
         
@@ -190,12 +195,12 @@
           Для большего понимания рассмотрим другой пример, который часто встречается на практике:
         </p>
         <figure class="zero-indentation__figure">
-          <img src="img/image 12.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image12.jpg" alt="methed шапка" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
         
         <figure class="zero-indentation__figure">
-          <img src="img/image 13.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image13.jpg" alt="код шапки methed" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
         
@@ -204,7 +209,7 @@
           Отступы между пунктами меню задаются так:
         </p>
         <figure class="zero-indentation__figure">
-          <img src="img/image 14.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image14.jpg" alt="css отступов шапки" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
         
@@ -212,7 +217,7 @@
           Советую использовать псевдоклассы :last-child чаще других, например так:
         </p>
         <figure class="zero-indentation__figure">
-          <img src="img/image 15.jpg" alt="" class="zero-indentation__img">
+          <img src="img/image15.jpg" alt="использование псевдокласса :last-child" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
       </div>

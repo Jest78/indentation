@@ -1,3 +1,7 @@
+.from-previous {
+    font-family: "Roboto", sans-serif;
+}
+
 .from-previous__title {
     font-size: 36px;
     font-weight: 900;
@@ -35,6 +39,9 @@
     display: block;
     max-width: 490px;
     width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 .from-previous__text:not(:last-child) {

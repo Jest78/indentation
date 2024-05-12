@@ -1,5 +1,6 @@
 .navigation {
   padding-top: 50px;
+  font-family: "Roboto", sans-serif;
 }
 
 .navigation__group {
@@ -14,6 +15,7 @@
   font-size: 44px;
   padding-left: 45px;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .navigation__ol {
@@ -26,6 +28,9 @@
   margin-bottom: 10px;
   color: #02535F;
   text-decoration: underline;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .navigation__li:last-child {
