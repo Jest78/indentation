@@ -10,10 +10,23 @@
 }
 
 .last-dom-element__figure {
+  margin-bottom: 30px;
+}
 
+.last-dom-element__figure--relative {
+  position: relative;
+  height: 450px;
 }
 
 .last-dom-element__img {
 
 }
 
+
+.last-dom-element__img--width600 {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
