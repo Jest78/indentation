@@ -1,4 +1,7 @@
 /* не реагирует */
+.summary {
+  margin-bottom: 50px;
+}
 .summary__title {
   font-size: 36px;
   margin-bottom: 20px;
