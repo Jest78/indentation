@@ -1,3 +1,7 @@
+.last-dom-element {
+  padding-top: 50px;
+}
+
 .last-dom-element__title {
   font-size: 36px ;
   font-weight: 900;
@@ -34,6 +38,10 @@
   margin-bottom: 30px;
 }
 
+.last-dom-element__img--mrgbottom0 {
+  margin-bottom: 0px;
+}
+
 .last-dom-element__img--width600 {
   width: 600px;
   position: absolute;
@@ -66,6 +74,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.last-dom-element__figure--relativeh164 {
+  position: relative;
+  height: 164px;
+}
+
+.last-dom-element__img--width964 {
+  width: 964px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last-dom-element__caption {
+  max-width: 1020px;
+  padding: 15px 30px;
+  margin: 0px auto;
 }
 
 .last-dom-element__caption--border {

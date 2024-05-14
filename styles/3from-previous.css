@@ -1,5 +1,5 @@
 .from-previous {
-    font-family: "Roboto", sans-serif;
+    padding-top: 50px;
 }
 
 .from-previous__title {
@@ -46,4 +46,12 @@
 
 .from-previous__text:not(:last-child) {
     margin-bottom: 30px; 
+}
+
+.from-previous__boldfont {
+    font-weight: 700;
+}
+
+.from-previous__italicfont {
+    font-style: italic;
 }

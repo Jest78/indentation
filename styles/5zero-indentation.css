@@ -1,4 +1,7 @@
-/* просто не работает css для секции,  хз почему. */
+/*не работает css для секции,  хз почему.
+Насколько я понимаю какая-то проблема в @import , 
+так как через <style> и inline стили работают */
+
 .zero-indentation {
   padding-top: 50px;
 }
@@ -10,3 +13,80 @@
   margin-bottom: 30px;
 }
 
+.zero-indentation__figure--relativeh600 {
+  position: relative;
+  height: 600px;
+}
+
+.zero-indentation__figure {
+  margin-bottom: 30px;
+}
+
+.zero-indentation__img--width600 {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__figure--relativeh607 {
+  position: relative;
+  height: 607px;
+}
+
+.zero-indentation__figure--mrgbot0 {
+  margin-bottom: 0;
+}
+
+.zero-indentation__figure--mrgbot50 {
+  margin-bottom: 50px;
+}
+
+
+.zero-indentation__figure--relativeh475 {
+  position: relative;
+  height: 475px;
+}
+
+.zero-indentation__img--width806 {
+  width: 806px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__figure--relativeh110 {
+  position: relative;
+  height: 110px;
+}
+
+.zero-indentation__img--width317 {
+  width: 317px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__figure--relativeh383 {
+  position: relative;
+  height: 383px;
+}
+
+.zero-indentation__img--width500 {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__text {
+  margin-bottom: 30px;
+}
+
+.zero-indentation__italicfont {
+  font-style: italic;
+}

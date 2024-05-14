@@ -33,7 +33,7 @@
     </section>
 
     <section class="navigation">
-      <div class="container">
+      <div class="container1140">
         <div class="navigation__group">
           <nav class="navigation__nav">
             <h2 class="navigation__title">Содержание:</h2>
@@ -57,18 +57,22 @@
           <img src="img/image1.jpg" alt="блоки с текстом" class="from-previous__img from-previous__img--withmargins">
           <div class="from-previous__grouptext from-previous__grouptext--floatright">
             <p class="from-previous__text">
-              ВАЖНО: margin всегда задают от предыдущего элемента к следующему.
+              <span class="from-previous__boldfont">ВАЖНО:</span> 
+              <span class="from-previous__italicfont">margin </span>
+              всегда задают от предыдущего элемента к следующему.
             </p>
             <p class="from-previous__text">
-              Свойство margin необходимо только для того, 
+              Свойство <span class="from-previous__italicfont">margin </span> 
+              необходимо только для того, 
               чтобы отодвинуть своего соседа справа или снизу, 
-              поэтому используется margin-right и margin-bottom.
+              поэтому используется <span class="from-previous__italicfont">margin-right</span> и
+              <span class="from-previous__italicfont">margin-bottom.</span>
             </p>
             <p class="from-previous__text">
-              (!) Свойства margin-left и margin-top используются крайне редко.
+              (!) Свойства <span class="from-previous__italicfont">margin-left</span> и <span class="from-previous__italicfont">margin-top</span> используются крайне редко.
             </p>
             <p class="from-previous__text">
-              Для padding верно обратное. 
+              Для <span class="from-previous__italicfont">padding</span> верно обратное. 
               Исключением является его применения в декоративных целях, 
               например, для увеличения области ссылки.
             </p>
@@ -78,7 +82,7 @@
         <div class="from-previous__grouptext from-previous__grouptext--floatleft">
           <p class="from-previous__text">
             Отступ внутри блока сверху или слева реализуется 
-            через padding-top и padding-left родителя.
+            через <span class="from-previous__italicfont">padding-top</span> и <span class="from-previous__italicfont">padding-left</span> родителя.
           </p>
           <p class="from-previous__text">
             Отступы, как правило, делают в направлении от предыдущего элемента к следующему. 
@@ -116,8 +120,8 @@
           Отступ делают за счёт соседних элементов, а не дочерних:
         </p>
         <figure class="last-dom-element__figure last-dom-element__figure--border">
-          <img src="img/image5.jpg" alt="полезные рецепты код" class="last-dom-element__img">
-          <figcaption class="last-dom-element__caption  last-dom-element__caption--border container1020">
+          <img src="img/image5.jpg" alt="полезные рецепты код" class="last-dom-element__img last-dom-element__img--mrgbottom0">
+          <figcaption class="last-dom-element__caption  last-dom-element__caption--border">
             <span class="last-dom-element__boldfont">ВАЖНО</span>
             : здесь 
             <span class="last-dom-element__italicfont">.list-item</span>
@@ -158,6 +162,133 @@
       </div>
     </section>
 
+    <!-- я понимаю, что встройка css через <style> это плохой тон и нагромождение, 
+    но это временное решение, пока не разберемся почему не подключается css для следующих секций. -->
+    
+<!-- =========================================   ВСТРОЕННЫЙ CSS    ================================================ -->
+
+<!-- ------------------------------------- CSS ДЛЯ 5 СЕКЦИИ ------------------------------ -->
+<style>
+
+.zero-indentation {
+  padding-top: 50px;
+}
+
+.zero-indentation__title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.zero-indentation__figure--relativeh600 {
+  position: relative;
+  height: 600px;
+}
+
+.zero-indentation__figure {
+  margin-bottom: 30px;
+}
+
+.zero-indentation__img--width600 {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__figure--relativeh607 {
+  position: relative;
+  height: 607px;
+}
+
+.zero-indentation__figure--mrgbot0 {
+  margin-bottom: 0;
+}
+
+.zero-indentation__figure--mrgbot50 {
+  margin-bottom: 50px;
+}
+
+
+.zero-indentation__figure--relativeh475 {
+  position: relative;
+  height: 475px;
+}
+
+.zero-indentation__img--width806 {
+  width: 806px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__figure--relativeh110 {
+  position: relative;
+  height: 110px;
+}
+
+.zero-indentation__img--width317 {
+  width: 317px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__figure--relativeh383 {
+  position: relative;
+  height: 383px;
+}
+
+.zero-indentation__img--width500 {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zero-indentation__text {
+  margin-bottom: 30px;
+}
+
+.zero-indentation__italicfont {
+  font-style: italic;
+}
+
+/* ----------------------------------  CSS ДЛЯ 6 СЕКЦИИ  --------------------------- */
+
+
+.summary__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+
+.summary__group {
+  padding-left: 45px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.summary__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.summary__item:last-child {
+  margin-bottom: 30px;
+}
+
+</style>
+
+    <!-- ============================   Конец встроенного CSS   =================================== -->
+
     <section class="zero-indentation">
       <div class="container">
         <h3 class="zero-indentation__title" id="link3">
@@ -170,27 +301,39 @@
           Между рецептами расстояние одинаковое. Можно заметить, 
           что и до следующего блока расстояние такое же.
         </p>
-        <figure class="zero-indentation__figure">
-          <img src="img/image8.jpg" alt="полезные рецепты margin-bottom" class="zero-indentation__img">
+        <figure class="zero-indentation__figure zero-indentation__figure--relativeh600">
+          <img src="img/image8.jpg" alt="полезные рецепты margin-bottom" class="zero-indentation__img zero-indentation__img--width600">
           <figcaption></figcaption>
         </figure>
         
         <p class="zero-indentation__text">
-          В соответствии со вторым принципом: последний margin обнуляется, 
-          а нижний отступ задаётся через padding для section. 
-          Я чаще всего задаю padding для секции с обоих сторон, 
-          если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.
+          В соответствии со вторым принципом: последний 
+          <span class="zero-indentation__italicfont">margin</span> обнуляется, 
+          а нижний отступ задаётся через 
+          <span class="zero-indentation__italicfont">padding</span> для 
+          <span class="zero-indentation__italicfont">section</span>. 
+          Я чаще всего задаю 
+          <span class="zero-indentation__italicfont">padding</span> для секции с обоих сторон, 
+          если расстояние между секциями 100px задаю секциям 
+          <span class="zero-indentation__italicfont">padding-top:50px</span> и 
+          <span class="zero-indentation__italicfont">padding-bottom:50px</span>.
         </p>
-        <figure class="zero-indentation__figure">
-          <img src="img/image9.jpg" alt="полезные рецепты инспектор отступов" class="zero-indentation__img">
+        <figure class="zero-indentation__figure zero-indentation__figure--relativeh607">
+          <img src="img/image9.jpg" alt="полезные рецепты инспектор отступов" 
+          class="zero-indentation__img zero-indentation__img--width600">
           <figcaption></figcaption>
         </figure>
         
-        <figure class="zero-indentation__figure">
+        <figure class="zero-indentation__figure zero-indentation__figure--mrgbot0">
           <img src="img/image10.jpg" alt="код HTML" class="zero-indentation__img">
           <figcaption></figcaption>
         </figure>
-        
+
+        <figure class="zero-indentation__figure">
+          <img src="img/image11.jpg" alt="код HTML" class="zero-indentation__img">
+          <figcaption></figcaption>
+        </figure>
+
         <p class="zero-indentation__text">
           Для большего понимания рассмотрим другой пример, который часто встречается на практике:
         </p>
@@ -199,8 +342,9 @@
           <figcaption></figcaption>
         </figure>
         
-        <figure class="zero-indentation__figure">
-          <img src="img/image13.jpg" alt="код шапки methed" class="zero-indentation__img">
+        <figure class="zero-indentation__figure zero-indentation__figure--relativeh475">
+          <img src="img/image13.jpg" alt="код шапки methed" 
+          class="zero-indentation__img zero-indentation__img--width806">
           <figcaption></figcaption>
         </figure>
         
@@ -208,46 +352,50 @@
           Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. 
           Отступы между пунктами меню задаются так:
         </p>
-        <figure class="zero-indentation__figure">
-          <img src="img/image14.jpg" alt="css отступов шапки" class="zero-indentation__img">
+        <figure class="zero-indentation__figure zero-indentation__figure--relativeh110">
+          <img src="img/image14.jpg" alt="css отступов шапки" 
+          class="zero-indentation__img zero-indentation__img--width317">
           <figcaption></figcaption>
         </figure>
         
         <p class="zero-indentation__text">
           Советую использовать псевдоклассы :last-child чаще других, например так:
         </p>
-        <figure class="zero-indentation__figure">
-          <img src="img/image15.jpg" alt="использование псевдокласса :last-child" class="zero-indentation__img">
+        <figure class="zero-indentation__figure zero-indentation__figure--relativeh383 zero-indentation__figure--mrgbot50">
+          <img src="img/image15.jpg" alt="использование псевдокласса :last-child" 
+          class="zero-indentation__img zero-indentation__img--width500">
           <figcaption></figcaption>
         </figure>
       </div>
     </section>
 
     <section class="summary">
-      <div class="container">
-        <h3 class="summary__title">Подытожим:</h3>
-        <ul class="summary__list">
-          <li class="summary__item">
-            — отступы задаём от предыдущего элемента к следующему
-          </li>
-          <li class="summary__item">
-            — используем только margin-right и margin-bottom
-          </li>
-          <li class="summary__item">
-            — внешние отступы задаются только между соседями
-          </li>
-          <li class="summary__item">
-            — внутренний отступ задаём самому верхнему элементу в дом дереве 
-          </li>
-          <li class="summary__item">
-            — последнему элементу группы отступ всегда обнуляем
-          </li>
-        </ul>
-        <p class="summary__text">
-          Конечно бывают исключения. Ведь макеты бывают различной сложности. 
-          Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. 
-          Но для этого эти принципы необходимо хорошо знать.
-        </p>
+      <div class="container1140">
+        <div class="summary__group">
+          <h3 class="summary__title">Подытожим:</h3>
+          <ul class="summary__list">
+            <li class="summary__item">
+              — отступы задаём от предыдущего элемента к следующему
+            </li>
+            <li class="summary__item">
+              — используем только margin-right и margin-bottom
+            </li>
+            <li class="summary__item">
+              — внешние отступы задаются только между соседями
+            </li>
+            <li class="summary__item">
+              — внутренний отступ задаём самому верхнему элементу в дом дереве 
+            </li>
+            <li class="summary__item">
+              — последнему элементу группы отступ всегда обнуляем
+            </li>
+          </ul>
+          <p class="summary__text">
+            Конечно бывают исключения. Ведь макеты бывают различной сложности. 
+            Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. 
+            Но для этого эти принципы необходимо хорошо знать.
+          </p>
+        </div>
       </div>
     </section>
   </article>
